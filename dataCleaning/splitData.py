@@ -3,7 +3,7 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
-data = pd.read_csv("data/final_data.csv")
+data = pd.read_csv("final_data.csv")
 
 def split_user_data(user_data, train_ratio, test_ratio, val_ratio):
     """

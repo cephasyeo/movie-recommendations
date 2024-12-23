@@ -49,7 +49,7 @@ def normalize_csv(file_path, output_file, columns_to_normalize):
     # save updated df
     df.to_csv(output_file, index=False)
 
-input_csv = "data\combined_data_with_embeddings.csv"
+input_csv = "combined_data_with_embeddings.csv"
 output_csv = "final_data.csv"
 embedding_columns = ["genre_embeddings", "actor_embeddings", "director_embeddings"]
 normalize_csv(input_csv, output_csv, embedding_columns)
